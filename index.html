@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+    
+  </head>
+  <body>
+    <!-- js file link -->
+    <script src="/script.js"></script>
+
+    <div class="container">
+      <div class="calculator">
+        <div class="row">
+          <input class="button-screen" type="text" id="screen"/>
+        </div>
+        <div class="row">
+          <button class="button button1" onclick="clearscr()">AC</button>
+          <button class="button buttonspecial" onclick="myfunc('(')">(</button>
+          <button class="button buttonspecial" onclick="myfunc(')')">)</button>
+          <button class="button buttonspecial" onclick="myfunc('/')">/</button>
+        </div>
+        <div class="row">
+          <button class="button" onclick="myfunc(7)" value="7">7</button>
+          <button class="button" onclick="myfunc(8)">8</button>
+          <button class="button" onclick="myfunc(9)">9</button>
+          <button class="button buttonspecial" onclick="myfunc('*')">*</button>
+        </div>
+        <div class="row">
+          <button class="button" onclick="myfunc(4)">4</button>
+          <button class="button" onclick="myfunc(5)">5</button>
+          <button class="button" onclick="myfunc(6)">6</button>
+          <button class="button buttonspecial" onclick="myfunc('-')">-</button>
+        </div>
+        <div class="row">
+          <button class="button" onclick="myfunc(1)">1</button>
+          <button class="button" onclick="myfunc(2)">2</button>
+          <button class="button" onclick="myfunc(3)">3</button>
+          <button class="button buttonspecial" onclick="myfunc('+')">+</button>
+        </div>
+        <div class="row">
+          <button class="button" onclick="myfunc(0)">0</button>
+          <button class="button" onclick="myfunc('.')">.</button>
+          <button class="button" onclick="clrcsr()">C</button>
+          <button class="button buttonspecial" onclick="result()">=</button>
+         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
