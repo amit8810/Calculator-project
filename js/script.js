@@ -1,4 +1,3 @@
-
 // To append the string while button is Press
 function myfunc(val){
     let screen = document.getElementById("screen");
@@ -6,11 +5,13 @@ function myfunc(val){
     screen.value += val;  
 }
 
-// Equal to Button functioning 
-function result() {
-    let screen = document.getElementById("screen");
-    screen.value = eval(screen.value);
-}
+// for result 
+let btn = document.getElementById('equal-to-btn');
+btn.addEventListener('click', () => {
+  let screen = document.getElementById('screen');
+  let result = parseFloat(eval(screen.value));
+  screen.value = result;
+});
 
 // AC Button function
 function clearscr(){
